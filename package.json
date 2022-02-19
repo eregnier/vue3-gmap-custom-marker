@@ -1,0 +1,31 @@
+{
+  "name": "vue3-gmap-custom-marker",
+  "version": "0.0.1",
+  "description": "vue 3 google map custom marker component allowing display custom html content on google map using gmap-vue",
+  "main": "gmap-custom-marker.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eregnier/vue3-gmap-custom-marker.git"
+  },
+  "keywords": [
+    "vue",
+    "js",
+    "google",
+    "map",
+    "marker",
+    "custom"
+  ],
+  "author": "Eric Régnier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eregnier/vue3-gmap-custom-marker/issues"
+  },
+  "homepage": "https://github.com/eregnier/vue3-gmap-custom-marker#readme",
+  "dependencies": {
+    "vue3-google-map": "^0.8.3",
+    "vue": "^3.x"
+  }
+}
