@@ -33,7 +33,7 @@ export default {
     }
   },
   mounted() {
-
+    this.onMap()
     // TODO cluster
     // if (this.$clusterPromise) {
     //   options.map = null;
@@ -42,6 +42,9 @@ export default {
   },
   methods: {
     onMap() {
+      if (!this.maps || this.$overlay) {
+        return
+      }
       const map = this.map
       const self = this
 
@@ -172,7 +175,9 @@ export default {
       this.onMap()
     },
     marker() {
-      this.$overlay.setPosition()
+      if (this.$overlay) {
+        this.$overlay.setPosition()
+      }
     },
     zIndex() {
       if (this.$overlay) {
