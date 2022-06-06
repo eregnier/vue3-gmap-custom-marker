@@ -118,8 +118,6 @@ export default {
             console.log('on get position', self.maps, self.lat, self.lng)
             return new self.maps.LatLng(self.lat, self.lng);
           };
-          //TODO cluster
-          // self.afterCreate(this);
         }
 
         onRemove() {
@@ -153,8 +151,13 @@ export default {
     maps() {
       this.onMap()
     },
-    marker() {
-      this.$overlay.setPosition()
+    marker: {
+      handler() {
+        if (this.$overlay) {
+          this.$overlay.setPosition()
+        }
+      },
+      deep: true
     },
     zIndex() {
       if (this.$overlay) {
