@@ -20,7 +20,7 @@ You might look at this [demo code repository](https://github.com/eregnier/vue3-g
 
 ## Features
 
-- Display reactive (:info: : reactive property seems to not work yet) custom html into markers on google map using slot system
+- Display reactive custom html into markers on google map using slot system
 
 - Live property change allows simple interaction with coordonates and zindex of html marker element
 

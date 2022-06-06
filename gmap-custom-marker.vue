@@ -32,19 +32,8 @@ export default {
       default: false
     }
   },
-  mounted() {
-    this.onMap()
-    // TODO cluster
-    // if (this.$clusterPromise) {
-    //   options.map = null;
-    // }
-    // return this.$clusterPromise;
-  },
   methods: {
     onMap() {
-      if (!this.maps || this.$overlay) {
-        return
-      }
       const map = this.map
       const self = this
 
@@ -154,16 +143,6 @@ export default {
         }
       }, 100);
     },
-    //TODO cluster
-    // afterCreate(inst) {
-    // if (this.$clusterPromise && !this.isMarkerAdded) {
-    //   this.$clusterPromise.then(co => {
-    //     co.addMarker(inst);
-    //     this.$clusterObject = co;
-    //     this.isMarkerAdded = true;
-    //   });
-    // }
-    // }
   },
   data() {
     return {
@@ -175,9 +154,7 @@ export default {
       this.onMap()
     },
     marker() {
-      if (this.$overlay) {
-        this.$overlay.setPosition()
-      }
+      this.$overlay.setPosition()
     },
     zIndex() {
       if (this.$overlay) {
@@ -210,15 +187,10 @@ export default {
     }
   },
   unmounted() {
-    //TODO cluster
-    // if (this.$clusterObject) {
-    //   this.$clusterObject.removeMarker(this.$overlay, true);
-    // } else {
     if (this.$overlay) {
       this.$overlay.setMap(null);
       this.$overlay = undefined;
     }
-    // }
   }
 };
 </script>
