@@ -4,7 +4,7 @@
 ![npm](https://img.shields.io/npm/v/vue3-gmap-custom-marker.svg)
 ![npm](https://img.shields.io/npm/dm/vue3-gmap-custom-marker.svg)
 ](https://www.npmjs.com/package/vue3-gmap-custom-marker)
-![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)
+![vue2](https://img.shields.io/badge/vue-3.x-brightgreen.svg)
 
 This component allows you to display custom HTML content on the map using Overlay.
 This component is an update (a fork) from existing [component for vue 2](https://github.com/eregnier/vue2-gmap-custom-marker)
