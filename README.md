@@ -10,8 +10,6 @@ This component allows you to display custom HTML content on the map using Overla
 This component is an update (a fork) from existing [component for vue 2](https://github.com/eregnier/vue2-gmap-custom-marker)
 to be usable with vue 3 with the [vue3-google-map project](https://github.com/inocan-group/vue3-google-map)
 
-it seems to work but some work but some adaptation from previous version remains to do to make it work properly.
-
 ## Demo
 
 [Demo](https://vue3-gmap-custom-marker-demo.pages.dev/)
